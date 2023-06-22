@@ -1,0 +1,253 @@
+---
+md-doc:
+  - cat:
+    hdr: 1. Универсальная схема оказания первой помощи
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          1.jpg
+          ?#
+  - cat:
+    hdr: 2. Внезапная смерть
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          2-1.jpg
+          ?#
+          #?img
+          2-2.jpg
+          ?#
+          #?img
+          2-3.jpg
+          ?#
+          #?img
+          2-4.jpg
+          ?#
+          #?img
+          2-5.jpg
+          ?#
+  - cat:
+    hdr: 3. Состояние комы
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          3.jpg
+          ?#
+  - cat:
+    hdr: 4. Артериальное кровотечение
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          4-1.jpg
+          ?#
+          #?img
+          4-2.jpg
+          ?#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  - cat:
+    hdr: 5. Ранение конечностей
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          5.jpg
+          ?#
+  - cat:
+    hdr: 6. Проникающие ранения груди
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          6.jpg
+          ?#
+  - cat:
+    hdr: 7. Проникающие ранения живота
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          7.jpg
+          ?#
+  - cat:
+    hdr: 8. Термичиские ожоги
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          8.jpg
+          ?#
+  - cat:
+    hdr: 9. Травмы глаз
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          9.jpg
+          ?#
+  - cat:
+    hdr: 10. Переломы костей конечностей
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          10-1.jpg
+          ?#
+          #?img
+          10-2.jpg
+          ?#
+          #?img
+          10-3.jpg
+          ?#
+  - cat:
+    hdr: 11. Поражение электрическим током
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          11-1.jpg
+          ?#
+          #?img
+          11-2.jpg
+          ?#
+          #?img
+          11-3.jpg
+          ?#
+  - cat:
+    hdr: 12. Падение с высоты
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          12-1.jpg
+          ?#
+          #?img
+          12-2.jpg
+          ?#
+          #?img
+          12-3.jpg
+          ?#
+          #?img
+          12-4.jpg
+          ?#
+  - cat:
+    hdr: 13. Автодорожные происшествия
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          13.jpg
+          ?#
+  - cat:
+    hdr: 14. Утопление
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          14-1.jpg
+          ?#
+          #?img
+          14-2.jpg
+          ?#
+  - cat:
+    hdr: 15. Переохлаждение и обморожение
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          15.jpg
+          ?#
+  - cat:
+    hdr: 16. Обморок
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          16.jpg
+          ?#
+  - cat:
+    hdr: 17. Сдавливание конечностей; укусы змей и насекомых
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          17.jpg
+          ?#
+  - cat:
+    hdr: 18. Химические ожоги и отравление газами
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          18.jpg
+          ?#
+  - cat:
+    hdr: 19. Показания к проведению основных манипуляций
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          19-1.jpg
+          ?#
+          #?img
+          19-2.jpg
+          ?#
+  - cat:
+    hdr: 20. Признаки опасных повреждений и состояний
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          20-1.jpg
+          ?#
+          #?img
+          20-2.jpg
+          ?#
+  - cat:
+    hdr: 21. Аптечка для оказания первой помощи
+    subcats:
+      - elem:
+        hdr: null
+        content: |+
+          #?img
+          21.jpg
+          ?#
+...
