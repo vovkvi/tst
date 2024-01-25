@@ -1,6 +1,6 @@
 {
 	"staticPath" : "./static",
-	"yamlPath" : ".",
+	"yamlPath" : "https://raw.githubusercontent.com/vovkvi/tst/main",
 	"author" : "Vitalii Vovk",
 	"last_upadate" : "25.01.2024"
 }
