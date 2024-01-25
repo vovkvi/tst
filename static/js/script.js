@@ -5,10 +5,24 @@ const pageParams = {
     'section' : getUrlParam('section', undefined)
 };
 
-let yamlData;
-async function fetchData(dataName) {
+let staticPath;
+let yamlPath;
+
+async function fetchVars() {
     try {
-        const response = await $.get(`./${dataName}.yaml`);
+        const response = await fetch('./vars.json');
+        let data = await response.json();
+        staticPath = data['staticPath'];
+        yamlPath = data['yamlPath'];
+    } catch(e) {
+        console.error(`[fetchData] code: ${e.status}; message: ${e}`);
+    }
+}
+
+let yamlData;
+async function fetchData(yamlName) {
+    try {
+        const response = await $.get(yamlName);
         yamlData = await jsyaml.load(response);
     } catch(e) {
         console.error(`[fetchData] code: ${e.status}; message: ${e}`);
@@ -16,10 +30,12 @@ async function fetchData(dataName) {
 }
 
 $(document).ready(() => {
-    let dataName = pageParams['data'] == undefined ? 'config' : pageParams['data'];
-    fetchData(dataName).then(() => {
-        renderPage(yamlData);
-    });
+    fetchVars().then(() => {
+        let dataName = pageParams['data'] == undefined ? 'index' : pageParams['data'];
+        fetchData(`${yamlPath}/${dataName}.yaml`).then(() => {
+            renderPage(yamlData);
+        });
+    }); 
 });
 
 function getUrlParam(parameter, defaultvalue){
@@ -83,7 +99,7 @@ function getDataBlockItem(object) {
     }
     let box_icon = Object.assign(document.createElement("div"),{
         className: 'box-icon',
-        innerHTML: `<svg><use xlink:href="${yamlData['static']}/${object['icon']}"></use></svg>`
+        innerHTML: `<svg><use xlink:href="${staticPath}/${object['icon']}"></use></svg>`
     });
     let box_description = Object.assign(document.createElement("div"),{
         className: 'box-description',
@@ -98,7 +114,7 @@ function getDataBlockItem(object) {
     });
     box_image.append(
         Object.assign(document.createElement("img"),{
-            src: `${yamlData['static']}/${object['background']}`
+            src: `${staticPath}/${object['background']}`
         }),
         Object.assign(document.createElement("div"),{
             className: 'box-image-blur'
@@ -110,7 +126,7 @@ function getDataBlockItem(object) {
     read_button.append(
         Object.assign(document.createElement("div"),{
             className: 'read-button-icon',
-            innerHTML: `<svg><use xlink:href="${yamlData['static']}/svg/icons.svg#circle"></use></svg>`
+            innerHTML: `<svg><use xlink:href="${staticPath}/svg/icons.svg#circle"></use></svg>`
         }),
          Object.assign(document.createElement("div"),{
             className: 'read-button-label',
@@ -394,13 +410,13 @@ function renderPage() {
 
 function changeTheme() {
     let dark = !parseInt($('body').attr('dark'));
-    $('#theme>svg>use').attr('xlink:href', dark ? `${yamlData['static']}/svg/icons.svg#light_mode` : `${yamlData['static']}/svg/icons.svg#dark_mode`);
+    $('#theme>svg>use').attr('xlink:href', dark ? `${staticPath}/svg/icons.svg#light_mode` : `${staticPath}/svg/icons.svg#dark_mode`);
     $('body').attr('dark', dark ? 1 : 0);
 }
 
 function showAnswers() {
     let show_answ = !parseInt($('body').attr('answers'));
-    $('#answer>svg>use').attr('xlink:href', show_answ ? `${yamlData['static']}/svg/icons.svg#ri-eye-off-fill` : `${yamlData['static']}/svg/icons.svg#ri-eye-fill`);
+    $('#answer>svg>use').attr('xlink:href', show_answ ? `${staticPath}/svg/icons.svg#ri-eye-off-fill` : `${staticPath}/svg/icons.svg#ri-eye-fill`);
     $('body').attr('answers', show_answ ? 1 : 0);
     $('details').attr('open', show_answ);
 }
@@ -408,11 +424,11 @@ function showAnswers() {
 function fullScreen() {
     if (document.fullscreenElement) {
         document.exitFullscreen();
-        $('#screen>svg>use').attr('xlink:href',`${yamlData['static']}/svg/icons.svg#ri-fullscreen-fill`);
+        $('#screen>svg>use').attr('xlink:href',`${staticPath}/svg/icons.svg#ri-fullscreen-fill`);
     }
     else {
         document.documentElement.requestFullscreen();
-        $('#screen>svg>use').attr('xlink:href',`${yamlData['static']}/svg/icons.svg#ri-fullscreen-exit-fill`);
+        $('#screen>svg>use').attr('xlink:href',`${staticPath}/svg/icons.svg#ri-fullscreen-exit-fill`);
     }
 }
 
