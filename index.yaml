@@ -1,0 +1,24 @@
+---
+doctype:
+  index
+description:
+  "Главная страница"
+title:
+  "Главная"
+content:
+  - contentitem:
+      title: "Материалы для самоподготовки к аттестации в комиссии ТЭЦ<br>ПАО &qout;ТГК-1&qout; филиал &qout;Невский&qout;"
+      items:
+        - i:
+            href: ./tec14
+            title: ТЭЦ-14
+            description: "Первомайская ТЭЦ" 
+            icon: svg/icons.svg#factory
+            background: img/tec14.jpg
+        - i:
+            href: ./tec5
+            title: ТЭЦ-5
+            description: "Правобережная ТЭЦ"
+            icon: svg/icons.svg#factory
+            background: img/tec5.jpg
+...
