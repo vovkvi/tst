@@ -1,0 +1,98 @@
+{
+	"static_path" : "../static",
+	"yaml_path" : "https://raw.githubusercontent.com/vovkvi/tst/main/tec5",
+	"pages" : {
+		"default" : {
+			"doctype" : "menu",
+			"title" : "ExaM | Правобережная ТЭЦ-5",
+			"description" : "Правобережная ТЭЦ",
+			"sections" : [
+				{
+					"title" : "Билеты для подготовки к экзамену",
+					"items" : [
+						{
+							"href" : ".?data=eb5",
+							"title": "ЭБ-V",
+							"description" : "Элек&shy;тро&shy;бе&shy;зо&shy;пас&shy;ность<br>(группа V)",
+							"icon" : "svg/icons.svg#ri-flashlight-fill",
+							"background" : "img/eb.jpg",
+							"last_update" : "19.06.2023 10:53",
+							"comment": null
+						},
+						{
+							"href" : ".?data=ot",
+							"title": "ОТ",
+							"description" : "Охрана труда",
+							"icon" : "svg/icons.svg#ri-alarm-warning-fill",
+							"background" : "img/ot.jpg",
+							"last_update" : "19.06.2023 12:45",
+							"comment": null
+						},
+						{
+							"href" : ".?data=pte",
+							"title": "ПТЭ",
+							"description" : "Эксплуатация",
+							"icon" : "svg/icons.svg#ri-tools-fill",
+							"background" : "img/pte.jpg",
+							"last_update" : "19.06.2023 12:50",
+							"comment": null
+						},
+						{
+							"href" : ".?data=pb",
+							"title": "ПБ",
+							"description" : "Пожарная безопасность",
+							"icon" : "svg/icons.svg#ri-fire-fill",
+							"background" : "img/pb.jpg",
+							"last_update" : "19.06.2023 13:19",
+							"comment": null
+						}
+					]
+				},
+				{
+					"title" : "Инструкции, пособия и методики",
+					"items" : [
+						{
+							"href" : ".?data=ot-doc",
+							"title": "ОТ",
+							"description" : "Охрана труда (пособие)",
+							"icon" : "svg/icons.svg#ri-first-aid-kit-fill",
+							"background" : "img/ot.jpg",
+							"last_update" : "19.06.2023 13:34",
+							"comment": null
+						}
+					]
+				}
+			]
+		},
+		"ot" : {
+			"doctype" : "card",
+			"title" : "ExaM | Правобережная ТЭЦ-5. Охрана труда",
+			"description" : "ОТ",
+			"filename" : "ot.yaml"
+		},
+		"ot-doc" : {
+			"doctype" : "doc",
+			"title" : "ExaM | Правобережная ТЭЦ-5. Охрана труда (пособие)",
+			"description" : "ОТ",
+			"filename" : "ot-doc.yaml"
+		},
+		"pb" : {
+			"doctype" : "card",
+			"title" : "ExaM | Правобережная ТЭЦ-5. Пожарная безопасность",
+			"description" : "ПБ",
+			"filename" : "pb.yaml"
+		},
+		"eb5" : {
+			"doctype" : "card",
+			"title" : "ExaM | Правобережная ТЭЦ-5. Электробезпасность (группа V)",
+			"description" : "ЭБ-V",
+			"filename" : "eb5.yaml"
+		},
+		"pte" : {
+			"doctype" : "card",
+			"title" : "ExaM | Правобережная ТЭЦ-5. Эксплуатация",
+			"description" : "ПТЭ",
+			"filename" : "pte.yaml"
+		}
+	}
+}
