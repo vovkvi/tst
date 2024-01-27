@@ -1,0 +1,237 @@
+---
+md-doc:
+  - # --- 1 ---
+    hdr: 1. Универсальная схема оказания первой помощи
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/1.jpg
+          ?#
+  - # --- 2 ---
+    hdr: 2. Внезапная смерть
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/2-1.jpg
+          ?#
+          #?img
+          md-doc/2-2.jpg
+          ?#
+          #?img
+          md-doc/2-3.jpg
+          ?#
+          #?img
+          md-doc/2-4.jpg
+          ?#
+          #?img
+          md-doc/2-5.jpg
+          ?#
+  - # --- 3 ---
+    hdr: 3. Состояние комы
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/3.jpg
+          ?#
+  - # --- 4 ---
+    hdr: 4. Артериальное кровотечение
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/4-1.jpg
+          ?#
+          #?img
+          md-doc/4-2.jpg
+          ?#
+  - # --- 5 ---
+    hdr: 5. Ранение конечностей
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/5.jpg
+          ?#
+  - # --- 6 ---
+    hdr: 6. Проникающие ранения груди
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/6.jpg
+          ?#
+  - # --- 7 ---
+    hdr: 7. Проникающие ранения живота
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/7.jpg
+          ?#
+  - # --- 8 ---
+    hdr: 8. Термичиские ожоги
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/8.jpg
+          ?#
+  - # --- 9 ---
+    hdr: 9. Травмы глаз
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/9.jpg
+          ?#
+  - # --- 10 ---
+    hdr: 10. Переломы костей конечностей
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/10-1.jpg
+          ?#
+          #?img
+          md-doc/10-2.jpg
+          ?#
+          #?img
+          md-doc/10-3.jpg
+          ?#
+  - # --- 11 ---
+    hdr: 11. Поражение электрическим током
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/11-1.jpg
+          ?#
+          #?img
+          md-doc/11-2.jpg
+          ?#
+          #?img
+          md-doc/11-3.jpg
+          ?#
+  - # --- 12 ---
+    hdr: 12. Падение с высоты
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/12-1.jpg
+          ?#
+          #?img
+          md-doc/12-2.jpg
+          ?#
+          #?img
+          md-doc/12-3.jpg
+          ?#
+          #?img
+          md-doc/12-4.jpg
+          ?#
+  - # --- 13 ---
+    hdr: 13. Автодорожные происшествия
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/13.jpg
+          ?#
+  - # --- 14 ---
+    hdr: 14. Утопление
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/14-1.jpg
+          ?#
+          #?img
+          md-doc/14-2.jpg
+          ?#
+  - # --- 15 ---
+    hdr: 15. Переохлаждение и обморожение
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/15.jpg
+          ?#
+  - # --- 16 ---
+    hdr: 16. Обморок
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/16.jpg
+          ?#
+  - # --- 17 ---
+    hdr: 17. Сдавливание конечностей; укусы змей и насекомых
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/17.jpg
+          ?#
+  - # --- 18 ---
+    hdr: 18. Химические ожоги и отравление газами
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/18.jpg
+          ?#
+  - # --- 19 ---
+    hdr: 19. Показания к проведению основных манипуляций
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/19-1.jpg
+          ?#
+          #?img
+          md-doc/19-2.jpg
+          ?#
+  - # --- 20 ---
+    hdr: 20. Признаки опасных повреждений и состояний
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/20-1.jpg
+          ?#
+          #?img
+          md-doc/20-2.jpg
+          ?#
+  - # --- 21 ---
+    hdr: 21. Аптечка для оказания первой помощи
+    subcats:
+      - # --- 1 ---
+        hdr: null
+        content: |+
+          #?img
+          md-doc/21.jpg
+          ?#
+...

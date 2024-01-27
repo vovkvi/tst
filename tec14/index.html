@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="ExaM" />
+    <title></title>
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+</head>
+<body answers="0" dark="0" card="0" count="0">
+	<div class="wrapper">
+		<div class="content">
+   	        <div class="content-loader">
+				<div class="hexagon" aria-label="Animated hexagonal ripples">
+					<div class="hexagon__group">
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+					</div>
+					<div class="hexagon__group">
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+					</div>
+					<div class="hexagon__group">
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+					</div>
+					<div class="hexagon__group">
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+					</div>
+					<div class="hexagon__group">
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+					</div>
+					<div class="hexagon__group">
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+						<div class="hexagon__sector"></div>
+					</div>
+				</div>
+				<p aria-label="Loading">Загрузка...</p>
+   	        </div>
+		</div>
+		<div class="footer">
+			<div class="author">&copy; Vitalii Vovk, 2024</div>
+			<div class="author_links">
+				<div class="author_links_item">
+					<a href="https://vovkvi.github.io"><svg><use xlink:href="../static/svg/icons.svg#github"></use></svg></a>
+				</div>
+				<div class="author_links_item">
+					<a href="https://t.me/vetalv"><svg><use xlink:href="../static/svg/icons.svg#telegram"></use></svg></a>
+				</div>
+				<div class="author_links_item">
+					<a href="mailto:vetalvovk@gmail.com"><svg><use xlink:href="../static/svg/icons.svg#mail"></use></svg></a>
+				</div>
+			</div>
+		</div>
+		<div class="eula">
+			<p>Используя материалы данного сайта, Вы подтверждаете, что ознакомились и согласны с нижеследующим:</p>
+			<br>
+			<p>Вся информация на сайте размещена в ознакомительных целях, не содержит призыва к действию и предназначена только для личного использования. Автор сайта не несет никакой ответственности за любой ущерб, который может быть причинен в любой форме за счет использования, неиспользования, неполноты или неправильности информации, размещенной на данном сайте. Все права на графические, текстовые и иные материалы, представленные на сайте, принадлежат их законным владельцам.</p>
+		</div>
+		<div class="navigator-container">
+			<div class="navigator">
+				<div class="switch" id="answer" onclick="showAnswers();">
+					<svg class="ri-icn"><use xlink:href="../static/svg/icons.svg#ri-eye-fill"></use></svg>
+				</div>
+				<div class="switch" id="theme" onclick="changeTheme();">
+					<svg class="ri-icn"><use xlink:href="../static/svg/icons.svg#dark_mode"></use></svg>
+				</div>
+				<div class="switch" id="screen" onclick="fullScreen();">
+					<svg class="ri-icn"><use xlink:href="../static/svg/icons.svg#ri-fullscreen-fill"></use></svg>
+				</div>
+				<div class="current-card-number">1 / 1</div>
+				<div class="switch" id="btn-prev" onclick="prevCard();">
+					<svg class="ri-icn"><use xlink:href="../static/svg/icons.svg#arrow_back"></use></svg>
+				</div>
+				<div class="switch" id="btn-next" onclick="nextCard();">
+					<svg class="ri-icn"><use xlink:href="../static/svg/icons.svg#arrow_forward"></use></svg>
+				</div>
+			</div>
+		</div>
+		<div class="fullscreen-container">
+			<div class="img-container">
+				<img class="fullscreen-img">
+			</div>
+			<div class="fullscreen-img-close" onclick="closeImg();">
+				<svg><use xlink:href="../static/svg/icons.svg#ri-close"></use></svg>
+			</div>
+		</div>
+	</div>
+	<!-- JS -->
+	<script type="text/javascript" src="../static/libs/detect.min.js"></script>
+	<script type="text/javascript">
+		const ua = detect.parse(navigator.userAgent);
+		if (ua.browser.family == 'IE') {
+			document.querySelector('title').innerText = 'ExaM | Ваш браузер не поддерживается :(';
+    		document.querySelector('.wrapper').innerHTML = '<div class="old-browser">\
+    		    <h2>К сожалению Ваш браузер не может отобразить данную страницу.<br>Рекомендуем воспользоваться одним из ниже предложенных браузеров</h2>\
+    		    <table>\
+    		        <tr>\
+    		            <td><a href="https://www.mozilla.org/en-US/firefox/new/"><img alt="firefox" src="../static/img/firefox.png"><p>Mozilla irefox</p></a></td>\
+						<td><a href="https://www.google.com/chrome/"><img alt="chrome" src="../static/img/chrome.png"><p>Google Chrome</p></a></td>\
+    		            <td><a href="https://www.microsoft.com/en-us/edge"><img alt="edge" src="../static/img/edge.png"><p>Microsoft Edge</p></a></td>\
+    		            <td><a href="https://www.apple.com/safari/"><img alt="safari" src="../static/img/safari.png"><p>Apple Safari</p></a></td>\
+    		        </tr>\
+    		    </table>';
+		}
+	</script>
+	<script type="text/javascript" src="../static/libs/jquery-3.7.0.min.js"></script>
+	<script type="text/javascript" src="../static/libs/js-yaml.min.js"></script>
+	<script type="text/javascript" src="../static/js/script.js"></script>
+</body>
+</html>

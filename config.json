@@ -1,0 +1,36 @@
+{
+	"static_path" : "./static",
+	"yaml_path" : "https://raw.githubusercontent.com/vovkvi/tst/main",
+	"pages": {
+		"default" : {
+			"doctype" : "index",
+			"title" : "ExaM | Главная",
+			"description" : "Главная страница",
+			"sections" : [
+				{
+					"title" : "Материалы для самоподготовки к аттестации в комиссии ТЭЦ<br>ПАО &quot;ТГК-1&quot; филиал &quot;Невский&quot;",
+					"items" : [
+						{
+							"href" : "./tec14",
+							"title": "ТЭЦ-14",
+							"description" : "Первомайская ТЭЦ",
+							"icon" : "svg/icons.svg#factory",
+							"background" : "img/tec14.jpg",
+							"last_update" : "20.06.2023 14:20",
+							"comment" : null
+						},
+						{
+							"href" : "./tec5",
+							"title": "ТЭЦ-5",
+							"description" : "Правобережная ТЭЦ",
+							"icon" : "svg/icons.svg#factory",
+							"background" : "img/tec5.jpg",
+							"last_update" : "19.06.2023 12:50",
+							"comment" : null
+						}
+					]
+				}
+			]
+		}
+	}
+}
