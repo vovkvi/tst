@@ -552,6 +552,7 @@ body[dark="1"] {
 .fullscreen-img {
 	margin: 0 auto;
 	border-radius: var(--box-border-radius);
+	max-width: 98%;
 }
 .fullscreen-img-close  {
 	position: absolute;
@@ -582,10 +583,14 @@ body[dark="1"] {
 	line-height: 1.4rem;
 	margin-top: 10px;
 }
+.answer-media,
+.answer-media img {
+	width: 100%;
+}
 .answer-media {
+	position: relative;
 	margin: 0 auto;
 	text-align: center;
-	width: 100%;
 	margin: 1rem .0 1rem 0;
 }
 .answer-media img {
