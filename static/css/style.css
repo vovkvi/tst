@@ -552,6 +552,14 @@ body[dark="1"] {
 .fullscreen-img {
 	margin: 0 auto;
 	border-radius: var(--box-border-radius);
+}
+.img-container {
+	max-width: 98%;
+	max-height: 98%;
+	display: flex;
+	align-items: center;
+}
+.fullscreen-img {
 	max-width: 98%;
 }
 .fullscreen-img-close  {
@@ -763,4 +771,14 @@ summary:focus {
 		padding-top: 0.75rem;
 		padding-bottom: 0.75rem;
 	}
+}
+@media (orientation: landscape) {
+	.img-container {
+		max-width: 98%;
+		height: 98%;
+	}
+	.fullscreen-img {
+		width: auto;
+		max-height: 98%;
+	} 
 }
