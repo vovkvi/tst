@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Тесты</title>
+    <meta name="description" content="A pure HTML example, without dependencies." />
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="./css/pico.min.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="container">
+        <hgroup>
+          <h2>Учебный центр</h2>
+          <p>Тестирование слушателей курса &quot;Наименование курса&quot;</p>
+        </hgroup>
+        <nav>
+          <ul>
+            <li>
+              <details class="dropdown">
+                <summary role="button" class="secondary">Тема оформления</summary>
+                <ul>
+                  <li><a href="#" data-theme-switcher="auto">Авто</a></li>
+                  <li><a href="#" data-theme-switcher="light">Светлая</a></li>
+                  <li><a href="#" data-theme-switcher="dark">Темная</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- ./ Header -->
+
+      <!-- Main -->
+      <main class="container">
+
+        <!-- Multi variant question -->
+        <section id="multi-sel">
+          <h3>Тип вопроса: Множественный выбор</h3>
+          <fieldset>
+            <label for="checkbox-1">
+              <input type="checkbox" id="checkbox-1" name="checkbox-1" checked />
+              Вариант №1
+            </label>
+            <label for="checkbox-2">
+              <input type="checkbox" id="checkbox-2" name="checkbox-2" />
+              Вариант №2
+            </label>
+            <label for="checkbox-3">
+              <input type="checkbox" id="checkbox-3" name="checkbox-3" checked />
+              Вариант №3
+            </label>
+            <label for="checkbox-4">
+              <input type="checkbox" id="checkbox-4" name="checkbox-4" />
+              Вариант №4
+            </label>
+          </fieldset>
+        </section>
+
+        <!-- One variant question -->
+        <section id="one-sel">
+          <h3>Тип вопроса: Единичный выбор</h3>
+          <fieldset>
+            <label for="radio-1">
+              <input type="radio" id="radio-1" name="radio1" value="radio-1" checked />
+              Вариант №1
+            </label>
+            <label for="radio-2">
+              <input type="radio" id="radio-2" name="radio1" value="radio-2" />
+              Вариант №2
+            </label>
+          </fieldset>
+        </section>
+
+        <!-- Image question -->
+        <section id="one-sel-img">
+          <h3>Тип вопроса: Единичный выбор и изображение</h3>
+          <div class="grid">
+            <figure>
+              <img src="./img/test.png" alt="test image"/>
+            </figure>
+            <!-- Radio buttons -->
+            <fieldset>
+              <label for="radio-1">
+                <input type="radio" id="radio-1" name="radio2" value="radio-1" checked />
+                Вариант №1
+              </label>
+              <label for="radio-2">
+                <input type="radio" id="radio-2" name="radio2" value="radio-2" />
+                Вариант №2
+              </label>
+              <label for="radio-2">
+                <input type="radio" id="radio-2" name="radio2" value="radio-3" />
+                Вариант №3
+              </label>
+            </fieldset>
+          </div>
+        </section>
+
+        <!-- Mapping question -->
+        <section id="mapping">
+          <h3>Тип вопроса: Сопоставление вариантов</h3>
+          <div class="grid">
+            <h5>Вариант №1</h5>
+            <!-- Select -->
+            <select id="select1" name="select" required>
+              <option value="0" selected>--</option>
+              <option value="1">Вариант №1</option>
+              <option value="2">Вариант №2</option>
+              <option value="3">Вариант №3</option>
+            </select>
+          </div>
+          <div class="grid">
+            <h5>Вариант №2</h5>
+            <!-- Select -->
+            <select id="select2" name="select" required>
+              <option value="0" selected>--</option>
+              <option value="1">Вариант №1</option>
+              <option value="2">Вариант №2</option>
+              <option value="3">Вариант №3</option>
+            </select>
+          </div>
+          <div class="grid">
+            <h5>Вариант №3</h5>
+            <!-- Select -->
+            <select id="select3" name="select" required>
+              <option value="0" selected>--</option>
+              <option value="1">Вариант №1</option>
+              <option value="2">Вариант №2</option>
+              <option value="3">Вариант №3</option>
+            </select>
+          </div>
+        </section>
+
+        <div class="buttons">
+           <button class="primary" data-target="modal-example" onclick="toggleModal(event)">
+              Завершить тестирование
+            </button>
+        </div>
+        
+      </main>
+      <div class="footer"></div>
+    </div>
+
+    <!-- Modal -->
+    <dialog id="modal-example">
+      <article>
+        <header>
+          <button aria-label="Close" rel="prev" data-target="modal-example" onclick="toggleModal(event)"></button>
+          <h3>Статус теста: <span class="test-status">не пройден</span></h3>
+        </header>
+        <h4 class="test-statictic">Правильных ответов: 0 из 20</h4>
+        <p>Для успешного прохождения тестирования необходимо дать не менее 15 правильных ответов на вопросы. Если Вы хотите посмотреть ошибки - нажмите &quot;Показать ошибки&quot;, для повторного прохождения теста нажмите &quot;Пройти снова&quot;.</p>
+        <footer>
+          <button role="button" class="secondary" data-target="modal-example" onclick="toggleModal(event)">Показать ошибки</button>
+          <button autofocus data-target="modal-example" onclick="toggleModal(event)">Пройти снова</button>
+        </footer>
+      </article>
+    </dialog>
+    <!-- ./ Modal -->
+
+    <!-- Minimal theme switcher -->
+    <script src="./js/minimal-theme-switcher.js"></script>
+
+    <!-- Modal -->
+    <script src="./js/modal.js"></script>
+
+  </body>
+</html>
